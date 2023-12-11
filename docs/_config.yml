@@ -1,0 +1,12 @@
+remote_theme: 
+  daviddarnes/alembic@main 
+
+plugins: 
+- jekyll-remote-theme
+
+
+title: Bengali Fish Recognizer
+
+author:
+  name: Neloy Barman
+
