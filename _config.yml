@@ -1,0 +1,9 @@
+remote_theme: daviddarnes/alembic@main 
+plugins: 
+- jekyll-remote-theme
+
+
+title: Lion Tiger Recognizer
+
+author:
+  name: Neloy Barman
