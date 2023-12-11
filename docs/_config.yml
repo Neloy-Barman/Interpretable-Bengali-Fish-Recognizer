@@ -1,6 +1,6 @@
-remote_theme: 
+remote_theme: daviddarnes/garth
   # daviddarnes/alembic@main 
-  jekyll-theme-basically-basic
+  # jekyll-theme-basically-basic
 
 plugins: 
 - jekyll-remote-theme
