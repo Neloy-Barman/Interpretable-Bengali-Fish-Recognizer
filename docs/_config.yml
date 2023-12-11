@@ -1,4 +1,5 @@
-remote_theme: daviddarnes/garth
+remote_theme: onwidget/astrowind 
+  # daviddarnes/garth
   # daviddarnes/alembic@main 
   # jekyll-theme-basically-basic
 
