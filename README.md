@@ -14,10 +14,7 @@
 | <p align="center"><strong>Silver Carp</strong></p> | <p align="center"><strong>Taki</strong></p> | <p align="center"><strong>Telapia</strong></p> | <p align="center"><strong>Tengra</strong></p> |
 | <img src="https://github.com/Neloy-Barman/Bengali-Fish-Recognizer/assets/110896263/fe43bc2c-e3db-48bd-b2a4-63dec4175279" height="200" width="200"> | <img src="https://github.com/Neloy-Barman/Bengali-Fish-Recognizer/assets/110896263/71b41ca6-1b94-4130-bbac-04c1321aa0e7" height="200" width="200"> | <img src="https://github.com/Neloy-Barman/Bengali-Fish-Recognizer/assets/110896263/c17eb7dd-da1a-428f-acda-4f9841677311" height="200" width="200"> | <img src="https://github.com/Neloy-Barman/Bengali-Fish-Recognizer/assets/110896263/92cd2449-0638-47c9-80b2-13825b03ed81" height="200" width="200"> |
 ## Objective
-There are many kinds of fishes sold in Bangladeshi fish markets. Each of them has their own characteristics. <br/>
-But there are a few that sometimes look alike but can be differentiated using tiny details. Such as, A Catla fish's head size is larger than the Rui's but other features are almost same.<br/>
-Ayre and Pangash both have same body structure but an ayre fish has hackeles whereas pangash doesn't fall in catfish category. There are many fishes like that.<br/>
-The main goal of this recognizer project is to categorize in between them.
+There are many kinds of fishes sold in Bangladeshi fish markets. Each of them has their own characteristics.But there are a few that sometimes look alike but can be differentiated using tiny details. Such as, A Catla fish's head size is larger than the Rui's but other features are almost same. Ayre and Pangash both have same body structure but an ayre fish has hackeles whereas pangash doesn't fall in catfish category. There are many fishes like that. The main goal of this recognizer project is to categorize in between them.
 ## Methodology
 ### Data Collection
 ### Data Cleaning
