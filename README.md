@@ -23,10 +23,9 @@ There are many kinds of fishes sold in Bangladeshi fish markets. Each of them ha
 ### Model Training
 ### Performance evaluation
 ## Deployment
-I deployed the recognizer using gradio app within Huggingface.<br/>
-You can check out the [deployment](https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer) and [required files](https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer/tree/main) for the deployment.
+<strong>I deployed the recognizer using gradio app within Huggingface.<br/>You can check out the <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer">deployment</a> & <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer/tree/main">required files</a> for the deployment.</strong> 
 ![Screenshot 2023-12-14 122632](https://github.com/Neloy-Barman/Bengali-Fish-Recognizer/assets/110896263/c646f1ee-fd5b-4a2a-93c8-5291bbe324ac)
 ## Integration to the website
-The recognizer model is integrated using github pages and jekyll remote theme.<br/>
-Check out the ingtegration here: - https://neloy-barman.github.io/Bengali-Fish-Recognizer/
-![Screenshot 2023-12-14 131507](https://github.com/Neloy-Barman/Bengali-Fish-Recognizer/assets/110896263/3cfb846b-3469-49b5-83bf-3c3eda51257e)
+<strong>The recognizer model is integrated using github pages and jekyll remote theme.<br/>
+Check out the ingtegration of <a href="https://neloy-barman.github.io/Bengali-Fish-Recognizer/">Bengali Fish Recognizer</a></strong>
+<img src="https://github.com/Neloy-Barman/Bengali-Fish-Recognizer/assets/110896263/3cfb846b-3469-49b5-83bf-3c3eda51257e">
