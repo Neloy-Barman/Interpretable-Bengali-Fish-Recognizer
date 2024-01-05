@@ -2,8 +2,8 @@
 title: Home
 layout: page 
 ---
-# Bengali Fish Recognizer
-<h3>A bengali fish image recognizer that can classify in between: -</h3> 
+<h2>Bengali Fish Recognizer</h2>
+<h4>A bengali fish image recognizer that can classify in between: -</h4> 
 
 <div align="center">
     <table>
