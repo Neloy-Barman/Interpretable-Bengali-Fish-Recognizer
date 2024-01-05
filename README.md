@@ -70,8 +70,7 @@
 </div>
 
 <h3><code style="color:blue">Objective</code></h3>
-
-There are many kinds of fishes sold in Bangladeshi fish markets. Each of them has their own characteristics.But there are a few that sometimes look alike but can be differentiated using tiny details. Such as, A Catla fish's head size is larger than the Rui's but other features are almost same. Ayre and Pangash both have same body structure but an ayre fish has hackeles whereas pangash doesn't fall in catfish category. There are many fishes like that. The main goal of this recognizer project is to categorize in between them.
+<strong>There are many kinds of fishes sold in Bangladeshi fish markets. Each of them has their own characteristics.But there are a few that sometimes look alike but can be differentiated using tiny details. Such as, A Catla fish's head size is larger than the Rui's but other features are almost same. Ayre and Pangash both have same body structure but an ayre fish has hackeles whereas pangash doesn't fall in catfish category. There are many fishes like that. The main goal of this recognizer project is to categorize in between them.</strong>
 
 <h3><code style="color:blue">Data Collection</code></h3>
 
