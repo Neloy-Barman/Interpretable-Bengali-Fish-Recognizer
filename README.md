@@ -76,6 +76,20 @@
 
 <h3><code style="color:blue">Data Cleaning</code></h3>
 
+<table align="center">
+    <tr>
+        <th align="center" colspan="2"><strong>Images Distribution</strong></th>
+    </tr>
+    <tr>
+        <th align="center">Before Cleaning</th>
+        <th align="center">After Cleaning</th>
+    </tr>
+    <tr>
+        <td align="center"><img src="readme_file_images/before.png" height="400" width="400"></td>
+        <td align="center"><img src="readme_file_images/after.png" height="400" width="400"></td>
+    </tr>
+</table>
+
 <h3><code style="color:blue">Dataloader Preparation</code></h3>
 
 <h3><code style="color:blue">Experiments</code></h3>
@@ -85,9 +99,10 @@
 <h3><code style="color:blue">Explainablity</code></h3>
 
 <h3><code style="color:blue">Deployment</code></h3>
-
-<strong>I deployed the recognizer using gradio app within Huggingface.<br/>You can check out the <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer">deployment</a> & <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer/tree/main">required files</a> for the deployment.</strong> 
-![Screenshot 2023-12-14 122632](https://github.com/Neloy-Barman/Bengali-Fish-Recognizer/assets/110896263/c646f1ee-fd5b-4a2a-93c8-5291bbe324ac)
+<strong>I deployed the recognizer using gradio app within Huggingface. Check out the <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer">deployment</a> & <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer/tree/main">required files</a> for the deployment.</strong> 
+<div align="center">
+    <img src="readme_file_images/gradio_deployment.png" height="450" width="900">
+</div>
 
 <h3><code style="color:blue">Integration</code></h3>
 
