@@ -28,15 +28,17 @@ layout: page
 	import { client } from "https://cdn.jsdelivr.net/npm/@gradio/client@0.1.4/dist/index.min.js";
 
     async function loaded(reader) {   
-		const app = await client("https://nelbarman053-bengali-fish-recognizer.hf.space/--replicas/bi3f3/");
+		const app = await client("https://nelbarman053-bengali-fish-recognizer.hf.space/--replicas/bgdp8/");
 		
 		const result = await app.predict("/predict", [
 						reader.result, 	// blob in 'image_path' Image component
 			]);
 
-		var label = result.data[0]['label']
+		// var label = result.data[0]['label']
 
-		results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p>${label}</p>`;
+		console.log(result);
+
+		// results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p>${label}</p>`;
     }
 
 
