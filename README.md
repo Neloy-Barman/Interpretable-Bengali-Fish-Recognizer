@@ -108,4 +108,3 @@
 
 <strong>The recognizer model is integrated using github pages and jekyll remote theme.<br/>
 Check out the ingtegration of <a href="https://neloy-barman.github.io/Bengali-Fish-Recognizer/">Bengali Fish Recognizer</a></strong>
-<img src="https://github.com/Neloy-Barman/Bengali-Fish-Recognizer/assets/110896263/3cfb846b-3469-49b5-83bf-3c3eda51257e">
