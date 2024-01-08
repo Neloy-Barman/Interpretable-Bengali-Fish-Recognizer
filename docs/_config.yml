@@ -4,7 +4,7 @@ remote_theme: LeNPaul/Millennial
   # jekyll-theme-basically-basic
 
 plugins: 
-- jekyll-remote-theme
+  - jekyll-remote-theme
 
 
 title: Bengali Fish Recognizer
