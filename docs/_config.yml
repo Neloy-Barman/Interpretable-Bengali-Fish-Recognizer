@@ -1,5 +1,6 @@
 remote_theme: 
-  Softorage/HugoTheme-VibrantShadows
+  TryGhost/eleventy-starter-ghost
+  # Softorage/HugoTheme-VibrantShadows
   # LeNPaul/Millennial
   # daviddarnes/garth Current
   # daviddarnes/alembic@main 
@@ -7,7 +8,6 @@ remote_theme:
 
 plugins: 
   - jekyll-remote-theme
-
 
 title: Bengali Fish Recognizer
 
