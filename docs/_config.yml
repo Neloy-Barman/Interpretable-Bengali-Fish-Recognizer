@@ -1,4 +1,6 @@
-remote_theme: LeNPaul/Millennial
+remote_theme: 
+  Softorage/HugoTheme-VibrantShadows
+  # LeNPaul/Millennial
   # daviddarnes/garth Current
   # daviddarnes/alembic@main 
   # jekyll-theme-basically-basic
