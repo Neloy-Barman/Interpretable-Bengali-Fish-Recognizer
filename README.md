@@ -1,5 +1,7 @@
 # Bengali-Fish-Recognizer
 
+<h2>Project Development Journal</h2>
+
 <h3><code style="color:blue">Problem Statement</code></h3>
 
 <strong>A bengali fish image recognizer that can classify in between: -</strong>
@@ -73,8 +75,10 @@
 <strong>There are many kinds of fishes sold in Bangladeshi fish markets. Each of them has their own characteristics.But there are a few that sometimes look alike but can be differentiated using tiny details. Such as, A Catla fish's head size is larger than the Rui's but other features are almost same. Ayre and Pangash both have same body structure but an ayre fish has hackeles whereas pangash doesn't fall in catfish category. There are many fishes like that. The main goal of this recognizer project is to categorize in between them.</strong>
 
 <h3><code style="color:blue">Data Collection</code></h3>
+<strong>A bit of exploration made me know that searching a fish with its scientific name gives better result and provides with more accurate images. So, I mapped each fish's bengali and scientific name within a dictionary. Then using fastAI's <a href="https://duckduckgo.com/">DuckDuckGo</a> searching, running a loop within the dictionary, I collected images for each category and kept them in their respective folders. You will found the whole procedure within the "data_collection" notebook.</strong>
 
 <h3><code style="color:blue">Data Cleaning</code></h3>
+<strong>There were many redundant images within many of the category. Even in some cases, some images were mixed up between catgories. So, before training I not only had to delete those redundant images but also move images to their respective folders. Still, as a human we sometimes fail to </strong>
 
 <table align="center">
     <tr>
@@ -85,8 +89,8 @@
         <th align="center">After Cleaning</th>
     </tr>
     <tr>
-        <td align="center"><img src="readme_file_images/before.png" height="400" width="400"></td>
-        <td align="center"><img src="readme_file_images/after.png" height="400" width="400"></td>
+        <td align="center"><img src="readme_file_images/before.png" height="350" width="350"></td>
+        <td align="center"><img src="readme_file_images/after.png" height="350" width="350"></td>
     </tr>
 </table>
 
