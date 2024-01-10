@@ -78,8 +78,7 @@
 <strong>A bit of exploration made me know that searching a fish with its scientific name gives better result and provides with more accurate images. So, I mapped each fish's bengali and scientific name within a dictionary. Then using fastAI's <a href="https://duckduckgo.com/">DuckDuckGo</a> searching, running a loop within the dictionary, I collected images for each category and kept them in their respective folders. You will found the whole procedure within the "data_collection" notebook.</strong>
 
 <h3><code style="color:blue">Data Cleaning</code></h3>
-<strong>There were many redundant images within many of the category. Even in some cases, some images were mixed up between catgories. So, before training I not only had to delete those redundant images but also move images to their respective folders. Still, as a human we sometimes fail to </strong>
-
+<strong>There were many redundant images within many categories. In some cases, images were mixed up between catgories. So, before training I not only had to delete those redundant images but also needed to move images to their respective folders. Still, as humen we sometimes fail to do each thing perfect. After model training, when the results were not satisfactory, I found the classes with most losses and repeated the cleaning process. In the end, if you look at the images distribution table, you will find out that it turned out to be an imbalanced dataset.</strong>
 <table align="center">
     <tr>
         <th align="center" colspan="2"><strong>Images Distribution</strong></th>
