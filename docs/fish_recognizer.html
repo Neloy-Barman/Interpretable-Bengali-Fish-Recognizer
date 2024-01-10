@@ -39,7 +39,28 @@
 
 		console.log(result);
 
-		// results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p>${label}</p>`;
+		var image = result.data[0]
+
+		var label = result.data[1]['label']
+
+		// console.log("This is the explainable AI image: "+image)
+
+		// console.log("This is the predicted category: "+label)
+
+		results.innerHTML = 
+		`
+			<div style="display:grid;">
+				<div>
+					<h3>Original Image</h3>
+					<img src = "${reader.result}" width="224" height="224">
+				</div>
+				<div>
+					<h3>Explainable AI visualization</h3>
+					<img src = "${image}" width="500" height="224">
+				</div>
+			</div>
+			// <br/> <img src = "${image}" width="500"> <p>${label}</p>
+		`;
     }
 
 
