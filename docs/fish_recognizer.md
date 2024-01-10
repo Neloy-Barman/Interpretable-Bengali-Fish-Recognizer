@@ -1,6 +1,6 @@
 ---
-	title: Recognizer
-	layout: page 
+title: Recognizer
+layout: page 
 ---
 
 
