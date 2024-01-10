@@ -81,8 +81,8 @@
 <strong>There were many redundant images within many categories. In some cases, images were mixed up between catgories. So, before training I not only had to delete those redundant images but also needed to move images to their respective folders. Still, as humen we sometimes fail to do each thing perfect.<br/>
 
 <div align="center">
-    <img src="readmeFileImages/redundant_image_1.png" height="200" width="600"><br/>
-    <img src="readmeFileImages/redundant_image_2.png" height="200" width="600">
+    <img src="readmeFileImages/redundant_image_1.png" height="200" width="850"><br/>
+    <img src="readmeFileImages/redundant_image_2.png" height="200" width="850">
 </div> 
 
 After model training, when the results were not satisfactory, I found the classes with most losses and repeated the cleaning process. In the end, if you look at the images distribution table, you will find out that it turned out to be an imbalanced dataset.</strong>
@@ -101,17 +101,26 @@ After model training, when the results were not satisfactory, I found the classe
 </table>
 
 <h3><code style="color:blue">Dataloader Preparation</code></h3>
+<strong>I splitted the whole data to. I prepared the dataloader with a batch size of 32.</strong>
 
-<h3><code style="color:blue">Experiments</code></h3>
+<h3><code style="color:blue">Models Experimentations</code></h3>
+<strong>To create the classifier, I chose some pre-trained and well-performing computer vision models with feature extractors avaialable in the fastAI and trained them. I selected these models from my previous research-based experience. The choosen ones are: - 
+    <ul>
+      <li>VGG-19</li>
+      <li>DenseNet-121</li>  
+      <li>ResNet-50</li>  
+    </ul>
+</strong>
 
 <h3><code style="color:blue">Performance Evaluation</code></h3>
 
 <h3><code style="color:blue">Explainablity</code></h3>
+<strong>To interpret the model's performances, I applied Grad-CAM, a gradient-based method.</strong> 
 
 <h3><code style="color:blue">Deployment</code></h3>
 <strong>I deployed the recognizer using gradio app within Huggingface. Check out the <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer">deployment</a> & <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer/tree/main">required files</a> for the deployment.</strong> 
 <div align="center">
-    <img src="readme_file_images/gradio_deployment.png" height="450" width="900">
+    <img src="readmeFileImages/gradio_deployment.png" height="450" width="900">
 </div>
 
 <h3><code style="color:blue">Integration</code></h3>
