@@ -1,8 +1,8 @@
 remote_theme: 
-  TryGhost/eleventy-starter-ghost
+  # TryGhost/eleventy-starter-ghost
   # Softorage/HugoTheme-VibrantShadows
   # LeNPaul/Millennial
-  # daviddarnes/garth Current
+  daviddarnes/garth Current
   # daviddarnes/alembic@main 
   # jekyll-theme-basically-basic
 
