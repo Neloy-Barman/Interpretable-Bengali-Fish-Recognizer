@@ -18,10 +18,23 @@ layout: page
 
 <gradio-app src="https://nelbarman053-bengali-fish-recognizer.hf.space"></gradio-app> -->
 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+</body>
+</html>
 
-<input id="photo" type="file">
 
-<div id="results"></div>
+<div class="container">
+	<input id="photo" type="file">
+	<div id="results"></div>
+</div>
 
 
 <script type="module">
@@ -47,19 +60,61 @@ layout: page
 
 		// console.log("This is the predicted category: "+label)
 
+		if (result){
+			results.innerHTML = 
+				`
+					<div class="container">
+						<div align="center">
+							<input id="photo" type="file">
+						</div>
+						<div align="Center">
+							<h2>Predicted Category: ${label}</h2>
+						</div>
+						<div class="grid_container">
+							<div align="center">
+								<h3>Original Image</h3>
+								<img src = "${reader.result}" width="300" height="300">
+							</div>
+							<div align="center">
+								<h3>Explainable AI visualization</h3>
+								<div class="xaiImage">
+									<img src = "${image}" width="500" height="280">
+								</div>
+							</div>
+						</div>
+					</div>
+				`;
+		}else{
+			results.innerHTML = 
+			`
+				<div class="container">
+					<div class="loader"></div>
+				</div>
+			`;
+		}
+
 		results.innerHTML = 
 		`
-			<div style="display:grid;">
-				<div>
-					<h3>Original Image</h3>
-					<img src = "${reader.result}" width="224" height="224">
+			<div class="container">
+				<div align="center">
+					<input id="photo" type="file">
 				</div>
-				<div>
-					<h3>Explainable AI visualization</h3>
-					<img src = "${image}" width="500" height="224">
+				<div align="Center">
+					<h2>Predicted Category: ${label}</h2>
+				</div>
+				<div class="grid_container">
+					<div align="center">
+						<h3>Original Image</h3>
+						<img src = "${reader.result}" width="300" height="300">
+					</div>
+					<div align="center">
+						<h3>Explainable AI visualization</h3>
+						<div class="xaiImage">
+							<img src = "${image}" width="500" height="280">
+						</div>
+					</div>
 				</div>
 			</div>
-			// <br/> <img src = "${image}" width="500"> <p>${label}</p>
 		`;
     }
 
