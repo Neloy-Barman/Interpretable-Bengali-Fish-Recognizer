@@ -127,7 +127,7 @@ After model training, when the results were not satisfactory, I found the classe
         <th>VGG-19</th>
     </tr>
     <tr align="center">
-        <td><img src="test data/unknown_01.jpg" height="200" width="200"></td>
+        <td><img src="testData/unknown_01.jpg" height="200" width="200"></td>
         <td><img src="readmeFileImages/resnet50_correct.png" height="200" width="200"></td>
         <td><img src="readmeFileImages/densenet121_correct.png" height="200" width="200"></td>
         <td><img src="readmeFileImages/vgg19_correct.png" height="200" width="200"></td>
@@ -148,7 +148,7 @@ After model training, when the results were not satisfactory, I found the classe
         <th>VGG-19</th>
     </tr>
     <tr align="center">
-        <td><img src="test data/unknown_10.jpg" height="200" width="200"></td>
+        <td><img src="testData/unknown_10.jpg" height="200" width="200"></td>
         <td><img src="readmeFileImages/resnet50_mis.png" height="200" width="200"></td>
         <td><img src="readmeFileImages/densenet121_mis.png" height="200" width="200"></td>
         <td><img src="readmeFileImages/vgg19_mis.png" height="200" width="200"></td>

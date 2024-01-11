@@ -1,5 +1,5 @@
-remote_theme: 
-  daviddarnes/garth Current
+remote_theme: daviddarnes/alembic@main
+  # daviddarnes/garth Current
   # TryGhost/eleventy-starter-ghost
   # Softorage/HugoTheme-VibrantShadows
   # LeNPaul/Millennial
