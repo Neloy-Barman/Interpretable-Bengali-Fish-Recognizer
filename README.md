@@ -115,10 +115,55 @@ After model training, when the results were not satisfactory, I found the classe
 <h3><code style="color:blue">Performance Evaluation</code></h3>
 
 <h3><code style="color:blue">Explainablity</code></h3>
-<strong>To interpret the model's performances, I applied Grad-CAM, a gradient-based method.</strong> 
+<strong>To interpret the model's performances, I applied Grad-CAM, a gradient-based method. Within an image, we can find which region was found important by a model for the predicted class.</strong> 
+<table align="center">
+    <tr align="center">
+        <th colspan="4">Correctly classified visualizations</th>
+    </tr>
+    <tr align="center">
+        <th>Actual Image</th>
+        <th>ResNet-50</th>
+        <th>DenseNet-121</th>
+        <th>VGG-19</th>
+    </tr>
+    <tr align="center">
+        <td><img src="test data/unknown_01.jpg" height="200" width="200"></td>
+        <td><img src="readmeFileImages/resnet50_correct.png" height="200" width="200"></td>
+        <td><img src="readmeFileImages/densenet121_correct.png" height="200" width="200"></td>
+        <td><img src="readmeFileImages/vgg19_correct.png" height="200" width="200"></td>
+    </tr>
+    <tr align="center">
+        <td><p>Rui</p></td>
+        <td><p>Rui</p></td>
+        <td><p>Rui</p></td>
+        <td><p>Rui</p></td>
+    </tr>
+       <tr align="center">
+        <th colspan="4">Mis-classified visualizations</th>
+    </tr>
+    <tr align="center">
+        <th>Actual Image</th>
+        <th>ResNet-50</th>
+        <th>DenseNet-121</th>
+        <th>VGG-19</th>
+    </tr>
+    <tr align="center">
+        <td><img src="test data/unknown_10.jpg" height="200" width="200"></td>
+        <td><img src="readmeFileImages/resnet50_mis.png" height="200" width="200"></td>
+        <td><img src="readmeFileImages/densenet121_mis.png" height="200" width="200"></td>
+        <td><img src="readmeFileImages/vgg19_mis.png" height="200" width="200"></td>
+    </tr>
+    <tr align="center">
+        <td><p>Koi</p></td>
+        <td><p>Telapia</p></td>
+        <td><p>Taki</p></td>
+        <td><p>Telapia</p></td>
+    </tr>
+</table>
+<strong>By looking at the Resnet-50's xai mask, we can say that it tries to find characteristics properly. For example, in the case of correctly classified image, it's locating regions nearby tail and head, even in the case of misclassification, it's marking more features within body area. But in the case of DenseNet-121, the masked areas are scattered more at outiside in both the cases. Vgg-19 while correctly classifying is locating the middle body area but more areas were masked than the required region. For the misclassification, it located within the image but stil missed the correct label.</strong>           
 
 <h3><code style="color:blue">Deployment</code></h3>
-<strong>I deployed the recognizer using gradio app within Huggingface. Check out the <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer">deployment</a> & <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer/tree/main">required files</a> for the deployment.</strong> 
+<strong>As ResNet-50 was showing better performance than others. So,I deployed the recognizer using gradio app within Huggingface. Check out the <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer">deployment</a> & <a href="https://huggingface.co/spaces/nelbarman053/Bengali-Fish-Recognizer/tree/main">required files</a> for the deployment.</strong> 
 <div align="center">
     <img src="readmeFileImages/gradio_deployment.png" height="450" width="900">
 </div>
