@@ -4,7 +4,7 @@
     left: 50%; 
     transform: translate(-50%, -50%);
     justify-content: center;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .grid_container{
@@ -37,17 +37,17 @@ input[type=file]::file-selector-button {
     background: #0d45a5;
   }
 
-  .loader {
+  /* .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid #3498db;
     width: 120px;
     height: 120px;
-    /* -webkit-animation: spin 2s linear infinite; Safari */
+     -webkit-animation: spin 2s linear infinite; Safari 
     animation: spin 2s linear infinite;
-  }
+  } 
 
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+  } */
