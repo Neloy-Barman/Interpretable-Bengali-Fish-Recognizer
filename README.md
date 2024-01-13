@@ -170,5 +170,10 @@ After model training, when the results were not satisfactory, I found the classe
 
 <h3><code style="color:blue">Integration</code></h3>
 
-<strong>The recognizer model is integrated using github pages and jekyll remote theme.<br/>
-Check out the ingtegration of <a href="https://neloy-barman.github.io/Bengali-Fish-Recognizer/">Bengali Fish Recognizer</a></strong>
+<strong>The recognizer model is integrated using github pages and <a href="https://github.com/daviddarnes/alembic">jekyll remote theme</a>.<br/>
+Check out my website ingtegration of <a href="https://neloy-barman.github.io/Bengali-Fish-Recognizer/"><img align="center" src="https://img.shields.io/badge/Bengali%20Fish%20Recognizer-grey"></a>.</strong>
+<div align="center">
+    <h2>Recognizer Webpage View</h2>
+    <img align="center" src="readmeFileImages/reccognizer.png" height="500" width="700">
+</div>
+
