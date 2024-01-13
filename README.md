@@ -113,6 +113,26 @@ After model training, when the results were not satisfactory, I found the classe
 </strong>
 
 <h3><code style="color:blue">Performance Evaluation</code></h3>
+<div align="center">
+    <table>
+        <tr align="center">
+            <th>Model</th>
+            <th>Accuracy(%)</th>
+        </tr>
+        <tr align="center">
+            <th>Resnet-50</th>
+            <td>81.379</td>
+        </tr>
+        <tr align="center">
+            <td>VGG-19</td>
+            <td>77.471</td>
+        </tr>
+        <tr align="center">
+            <th>Densenet-121</th>
+            <td>80.229</td>
+        </tr>
+    </table>
+</div>
 
 <h3><code style="color:blue">Explainablity</code></h3>
 <strong>To interpret the model's performances, I applied Grad-CAM, a gradient-based method. Within an image, we can find which region was found important by a model for the predicted class.</strong> 
