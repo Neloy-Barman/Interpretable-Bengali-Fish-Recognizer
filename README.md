@@ -1,4 +1,4 @@
-# Bengali-Fish-Recognizer
+# Bengali Fish Recognizer
 
 <h2>Project Development Journal</h2>
 
@@ -101,7 +101,7 @@ After model training, when the results were not satisfactory, I found the classe
 </table>
 
 <h3><code style="color:blue">Dataloader Preparation</code></h3>
-<strong>I splitted the whole data to. I prepared the dataloader with a batch size of 32.</strong>
+<strong>I splitted the whole dataset with 80% for training purpose and 20& as validation set. I prepared the dataloader with a batch size of 32. After training I viewed the top losses and cleaned data for multiple times to get a better result as well as created multiple versions of dataloader.</strong>
 
 <h3><code style="color:blue">Models Experimentations</code></h3>
 <strong>To create the classifier, I chose some pre-trained and well-performing computer vision models with feature extractors avaialable in the fastAI and trained them. I selected these models from my previous research-based experience. The choosen ones are: - 
@@ -111,8 +111,16 @@ After model training, when the results were not satisfactory, I found the classe
       <li>ResNet-50</li>  
     </ul>
 </strong>
+<strong>Training process for each model: - </strong>
+<ol>
+    <li><strong>Firstly, I freezed the pre-trained layers for each model.</strong></li>
+    <li><strong>Secondly I found the suitable learning rate range using fastai's lr_find.</strong></li>
+    <li><strong>I trained the models for 30 epochs for both fit_one_cycle using learning rate range and fine_tune method using auto learning rate tuning.</strong></li>
+    <li><strong>Lastly, I unfreezed the models and repeated the processes from 2-3.</strong></li>
+</ol>
 
 <h3><code style="color:blue">Performance Evaluation</code></h3>
+<strong>Among all the experimentations, for ResNet-50, I got better performance using the fine_tune method whereas for other ones, using fit_one_cycle method gives a good result. The following table contains the accuracies from the better performing experiments.</strong>
 <div align="center">
     <table>
         <tr align="center">
