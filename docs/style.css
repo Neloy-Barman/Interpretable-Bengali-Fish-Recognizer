@@ -53,6 +53,7 @@ input[type=file]::file-selector-button {
   }
 
   #Progress {
+    margin-top: 20px;
     width: 300px;
     background-color: rgb(167, 201, 168);
     display: flex;

@@ -1,5 +1,5 @@
 ---
-title: Recognizer
+title: Bengali Fish Recognizer
 layout: page 
 ---
 
@@ -76,12 +76,6 @@ layout: page
 		results.innerHTML = 
 		`
 			<div class="container">
-				<div align="Center">
-					<h2>Predicted Category: ${label}</h2>
-				</div>
-				<div id="Progress">
-  					<div align="left" id="progressBar" style="width: ${percentage.toFixed(2)*3}px;">${percentage.toFixed(2)}%</div>
-				</div>
 				<div class="grid_container">
 					<div align="center">
 						<h3>Original Image</h3>
@@ -93,6 +87,12 @@ layout: page
 							<img src = "${image}" width="500" height="280">
 						</div>
 					</div>
+				</div>
+				<div id="Progress">
+  					<div align="left" id="progressBar" style="width: ${percentage.toFixed(2)*3}px;">${percentage.toFixed(2)}%</div>
+				</div>
+				<div align="Center">
+					<h2>Predicted Category: ${label}</h2>
 				</div>
 			</div>
 		`;
