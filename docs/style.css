@@ -25,7 +25,7 @@
 input[type=file]::file-selector-button {
     margin-right: 20px;
     border: none;
-    background: #084cdf;
+    background: #03993c;
     padding: 10px 20px;
     border-radius: 10px;
     color: #fff;
@@ -34,20 +34,38 @@ input[type=file]::file-selector-button {
   }
   
   input[type=file]::file-selector-button:hover {
-    background: #0d45a5;
+    background: #03993c;
   }
 
-  /* .loader {
+  .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
+    border-top: 16px solid #00fc71;
     width: 120px;
     height: 120px;
-     -webkit-animation: spin 2s linear infinite; Safari 
+     /* -webkit-animation: spin 2s linear infinite; Safari  */
     animation: spin 2s linear infinite;
   } 
 
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  } */
+  }
+
+  #Progress {
+    width: 300px;
+    background-color: rgb(167, 201, 168);
+    display: flex;
+    justify-content: left;
+    border-radius: 50px;
+  }
+  
+  #progressBar {
+    border-radius: 50px;
+    width: 1%;
+    height: 40px;
+    background-color: forestgreen;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+  }

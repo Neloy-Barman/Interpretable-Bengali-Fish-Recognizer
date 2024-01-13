@@ -22,7 +22,7 @@ layout: page
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Fish Recognizer</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -32,6 +32,7 @@ layout: page
 
 
 <div class="container_new" align="center">
+	<!-- <div class="loader"></div> -->
 	<input id="photo" type="file">
 	<div id="results"></div>
 </div>
@@ -56,48 +57,30 @@ layout: page
 
 		var label = result.data[1]['label']
 
+		var percentage = result.data[1]['confidences'][0]['confidence'] * 100;
+
+		console.log("Percentage: "+percentage);
+
 		// console.log("This is the explainable AI image: "+image)
 
 		// console.log("This is the predicted category: "+label)
 
-		if (result){
-			results.innerHTML = 
-				`
-					<div class="container_new">
-						<div align="Center">
-							<h2>Predicted Category: ${label}</h2>
-						</div>
-						<div class="grid_container">
-							<div align="center">
-								<h3>Original Image</h3>
-								<img src = "${reader.result}" width="300" height="300">
-							</div>
-							<div align="center">
-								<h3>Explainable AI visualization</h3>
-								<div class="xaiImage">
-									<img src = "${image}" width="500" height="280">
-								</div>
-							</div>
-						</div>
-					</div>
-				`;
-		}else{
-			results.innerHTML = 
-			`
-				<div class="container">
-					<div class="loader"></div>
-				</div>
-			`;
-		}
+		const input = document.getElementById('photo');
+
+		input.style.display = 'block';
+
+		// const progress_bar = document.getElementById("progressBar");
+		
+		// progress_bar.style.width = percentage + "%" ;
 
 		results.innerHTML = 
 		`
 			<div class="container">
-				<div align="center">
-					<input id="photo" type="file">
-				</div>
 				<div align="Center">
 					<h2>Predicted Category: ${label}</h2>
+				</div>
+				<div id="Progress">
+  					<div align="left" id="progressBar" style="width: ${percentage.toFixed(2)*3}px;">${percentage.toFixed(2)}%</div>
 				</div>
 				<div class="grid_container">
 					<div align="center">
@@ -118,11 +101,24 @@ layout: page
 
     function read() {
         const reader = new FileReader();
+		// console.log(reader.result);
+		const input = document.getElementById('photo');
+
+		input.style.display = 'none';
+
+		results.innerHTML = 
+		`
+		<div class="container_new" align="center">
+			<div class="loader"></div>
+		</div>
+		`;
         reader.addEventListener('load', () => loaded(reader))
         reader.readAsDataURL(photo.files[0]);
     }
 
     photo.addEventListener('input', read);
+
+
 
 </script>
 
