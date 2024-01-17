@@ -1,4 +1,4 @@
-# Bengali Fish Recognizer
+# An Interpretable Bengali Fish Recognizer
 
 <h2>Project Development Journal</h2>
 
