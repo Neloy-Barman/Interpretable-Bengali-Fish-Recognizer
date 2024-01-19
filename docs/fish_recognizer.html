@@ -55,9 +55,15 @@ layout: page
 
 		var image = result.data[0]
 
-		var label = result.data[1]['label']
+		var information = result.data[1]['label'].split(";")
 
-		var percentage = result.data[1]['confidences'][0]['confidence'] * 100;
+		var label = result.data[2]['label']
+		
+		var percentage = result.data[2]['confidences'][0]['confidence'] * 100;
+
+		console.log("Information: "+information);
+
+		console.log(information.length);
 
 		console.log("Percentage: "+percentage);
 
@@ -93,6 +99,9 @@ layout: page
 				</div>
 				<div align="Center">
 					<h2>Predicted Category: ${label}</h2>
+					<p class="extra_information">${information[0]}</p>
+					<p class="extra_information">${information[1]}</p>
+					<p class="extra_information">${information[2]}</p>
 				</div>
 			</div>
 		`;
