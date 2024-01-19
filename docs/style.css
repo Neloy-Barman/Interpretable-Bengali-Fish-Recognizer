@@ -71,7 +71,14 @@ input[type=file]::file-selector-button {
     color: white;
   }
 
+  /* .informations{
+    background-color: #00fc71;
+    max-height: 250px;
+    max-width: 800px;
+  } */
+
   .extra_information{
+    margin: 0;
     font-size: 20px;
     font-weight: 600;
     color: rgb(2, 66, 63);
