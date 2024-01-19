@@ -85,7 +85,7 @@
     <img src="readmeFileImages/redundant_image_2.png" height="200" width="850">
 </div> 
 
-After model training, when the results were not satisfactory, I found the classes with most losses and repeated the cleaning process. In the end, if you look at the images distribution table, you will find out that it turned out to be an imbalanced dataset.</strong>
+After model training, when the results were not satisfactory, I found the classes with most losses and repeated the cleaning process. Therefore, a noticeable change can be found in image numbers in the case of some categories. Such as, previously the class Rui had less images whereas after cleaning it contains the most number of images. Some classes like Shing, Silver Carp, Taki faced the decreasing number of images. In the end, if you look at the images distribution table, you will find out that it turned out to be an imbalanced dataset. Check out the final dataset <a href="https://www.kaggle.com/datasets/neloybarman018/bengali-fish-images-dataset">here</a>.</strong>
 <table align="center">
     <tr>
         <th align="center" colspan="2"><strong>Images Distribution</strong></th>
@@ -199,9 +199,9 @@ After model training, when the results were not satisfactory, I found the classe
 <h3><code style="color:blue">Integration</code></h3>
 
 <strong>The recognizer model is integrated using github pages and <a href="https://github.com/daviddarnes/alembic">jekyll remote theme</a>.<br/>
-Check out my website ingtegration of <a href="https://neloy-barman.github.io/Bengali-Fish-Recognizer/"><img align="center" src="https://img.shields.io/badge/Bengali%20Fish%20Recognizer-grey"></a>.</strong>
+Check out my website ingtegration of <a href="https://neloy-barman.github.io/Interpretable-Bengali-Fish-Recognizer/"><img align="center" src="https://img.shields.io/badge/Bengali%20Fish%20Recognizer-grey"></a>.</strong>
 <div align="center">
     <h2>Recognizer Webpage View</h2>
-    <img align="center" src="readmeFileImages/reccognizer.png" height="500" width="700">
+    <img align="center" src="readmeFileImages/recognizer.png" height="500" width="700">
 </div>
 
