@@ -205,3 +205,7 @@ Check out my website ingtegration of <a href="https://neloy-barman.github.io/Int
     <img align="center" src="readmeFileImages/recognizer.png" height="500" width="700">
 </div>
 
+<h3><code style="color:blue">Short Video Demonstration</code></h3>
+<strong>I prepared a short video demonstration and shared it as a linked in post. Check it out <a href="https://www.linkedin.com/feed/update/urn:li:activity:7154152192059293696/">here</a>.</strong>
+
+
