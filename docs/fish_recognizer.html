@@ -61,11 +61,17 @@ layout: page
 		
 		var percentage = result.data[2]['confidences'][0]['confidence'] * 100;
 
-		console.log("Information: "+information);
+		var scientific_name = information[0].replace("\n","");
+		var taste = information[1].replace("\n","");
+		var found = information[2].replace("\n","");
 
-		console.log(information.length);
+		// console.log(scientific_name);
 
-		console.log("Percentage: "+percentage);
+		// console.log("Information: "+information);
+
+		// console.log(information.length);
+
+		// console.log("Percentage: "+percentage);
 
 		// console.log("This is the explainable AI image: "+image)
 
@@ -99,9 +105,9 @@ layout: page
 				</div>
 				<div align="Center">
 					<h2>Predicted Category: ${label}</h2>
-					<p class="extra_information">${information[0]}</p>
-					<p class="extra_information">${information[1]}</p>
-					<p class="extra_information">${information[2]}</p>
+					<p class="extra_information">${scientific_name}</p>
+					<p class="extra_information">${taste}</p>
+					<p class="extra_information">${found}</p>
 				</div>
 			</div>
 		`;
