@@ -1,5 +1,4 @@
-remote_theme: TryGhost/eleventy-starter-ghost 
-  # daviddarnes/alembic@main
+remote_theme: daviddarnes/alembic@main
   # daviddarnes/garth Current
   # TryGhost/eleventy-starter-ghost
   # Softorage/HugoTheme-VibrantShadows
