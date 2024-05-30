@@ -100,6 +100,8 @@ After model training, when the results were not satisfactory, I found the classe
     </tr>
 </table>
 
+
+
 <h3><code style="color:blue">Dataloader Preparation</code></h3>
 <strong>I splitted the whole dataset with 80% for training purpose and 20& as validation set. I prepared the dataloader with a batch size of 32. After training I viewed the top losses and cleaned data for multiple times to get a better result as well as created multiple versions of dataloader.</strong>
 
